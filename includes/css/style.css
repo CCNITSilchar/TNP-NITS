@@ -1,0 +1,370 @@
+/*
+*style.css
+*style-sheet for TNP website, NIT Silchar
+*/
+/*fonts*/
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-Regular-webfont.eot');
+    src: url('../fonts/Bitter-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Bitter-Regular-webfont.woff') format('woff'),
+         url('../fonts/Bitter-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Bitter-Regular-webfont.svg#BitterRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-Italic-webfont.eot');
+    src: url('../fonts/Bitter-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Bitter-Italic-webfont.woff') format('woff'),
+         url('../fonts/Bitter-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/Bitter-Italic-webfont.svg#BitterItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-Bold-webfont.eot');
+    src: url('../fonts/Bitter-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Bitter-Bold-webfont.woff') format('woff'),
+         url('../fonts/Bitter-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Bitter-Bold-webfont.svg#BitterBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../fonts/DroidSans-webfont.eot');
+    src: url('../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSans-webfont.woff') format('woff'),
+         url('../fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../fonts/DroidSans-Bold-webfont.eot');
+    src: url('../fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Orator Std';
+    src: url('../fonts/OratorStd.otf')  format('opentype');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Black Jack';
+    src: url('../fonts/black_jack.ttf')  format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rosario';
+    src: url('../fonts/Rosario-Regular.otf');
+    src: url('../fonts/Rosario-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Rosario-Regular.woff') format('woff'),
+         url('../fonts/Rosario-Regular.ttf') format('truetype'), url('../fonts/Rosario-Regular.otf')  format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rosario';
+    src: url('../fonts/Rosario-Bold.otf');
+    src: url('../fonts/Rosario-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Rosario-Bold.woff') format('woff'),
+         url('../fonts/Rosario-Bold.ttf') format('truetype'), url('../fonts/Rosario-Bold.otf')  format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Regular.ttf');
+    src: url('../fonts/Jura-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Medium.ttf');
+    src: url('../fonts/Jura-Medium.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-DemiBold.ttf');
+    src: url('../fonts/Jura-DemiBold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GOODTIME';
+    src: url('../fonts/GOODTIME.ttf');
+    src: url('../fonts/GOODTIME.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*end of fonts*/
+
+
+
+
+/*global styles*/
+html{
+	background:#efefef;
+}
+body{
+	background:#ffffff;
+	font-size:1.4em;
+}
+@media only screen and (min-width:769px){
+	body{
+		margin:0 3.67%;
+	}
+}
+hr.header-sep{
+	clear:left;
+	border-color:#ffffff;
+}
+header a{
+	color:#010101;
+	text-decoration:none;
+}
+header a:hover{
+	text-decoration:none;
+	color:#010101;
+}
+header a:active{
+	text-decoration:none;
+	color:#010101;
+}
+header a:focus{
+	text-decoration:none;
+	color:#010101;
+}
+
+	.clock{
+		float:right;
+		line-height:1m;
+		font-family:"Jura";
+		font-size:1.2em;
+		text-align:justify;
+		margin:20px;
+		word-spacing:150%;
+	}
+	.smallabc{
+		font-size:1.1em;
+		letter-spacing:+1px;
+	}
+@media only screen and (max-width:768px){
+	#clockbox{
+
+		display:none;
+	}
+}
+.site-header{
+	float:left;
+	width:100%;
+}
+.site-header .logo{
+	width:25%;
+	float:left;
+	width:90px;
+	margin-left:15px;
+}
+.site-header .logo img{
+	width:100%;
+	max-height:90px;
+}
+.site-header .title{
+	padding-left:2px;
+	width:70%;
+	float:left;
+}
+h1+small{
+	font-family:Jura;
+	font-size:1.2em;
+}
+/* ul.nav>li>a:link{
+	font-family:DroidSans;
+	color:#dcdcdc;
+}
+ul.nav>li>a:visited{
+	color:#fafafa;
+}
+ul.nav>li>a:hover{
+	color:#dd4814;
+}
+ul.nav>li>a:active{
+	color:#dd4814;
+} */
+.navbar-inverse .navbar-nav>li>a{
+	font-family:DroidSans;
+	color: #cfcfcf;
+}
+@media only screen and (max-width:768px){
+	.nav>li{
+		text-align:center;
+	}
+	li.submenu{
+		text-align:center;
+	}
+}
+@media only screen and (max-width:840px){
+	nav{
+		font-size:0.85em;
+	}
+}
+li.submenu a:hover{
+	background:#4050b0;
+	color:#ffffff;
+}
+.main-content{
+	position:relative;
+	margin-bottom:25px;
+	height:100%;
+	text-align:justify;
+}
+.slider-home{
+	width:100%;
+	height:55%;
+	margin-top:1px;
+	max-height:370px;
+	margin-bottom:30px;
+}
+/*footer styles*/
+footer{
+	background: #282828;
+}
+.footer-50{
+	width:48%;
+	display:inline-table;
+}
+footer li{
+	list-style:none;
+	margin:5px;
+	line-height:1em;
+	text-align:justify;
+}
+footer li a:link{
+	color:#f0f0f0;
+	text-decoration:none;
+	font-size:0.89em;
+}
+footer li a:visited{
+	color:#f0f0f0;
+	text-decoration:none;
+}
+footer li a:hover{
+	color:#3caca3;
+	text-decoration:none;
+}
+footer li a:active{
+	color:#dd4814;
+	text-decoration:none;
+}
+footer h4{
+	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
+	text-transform:uppercase;
+	font-size:1.3em;
+	text-align:center;
+	color: #ffffff;
+	margin:10px 0px 20px 0px;
+	line-height:0;
+}
+.copyright-info{
+	margin-top:0px;
+	text-align:right;
+	padding:5px;
+	width:100%;
+	background:#f0f0f0;
+	color:#4050b0;
+	overflow:hidden;
+}
+/*end of footer styles*/
+
+/*heading styles*/
+	h1{
+		font-size:2.5em;
+		font-family:"Orator Std";
+		letter-spacing:-2px;
+		margin:10px auto 0 auto;
+	}
+	@media (max-width:576px){
+	h1{
+		margin-top:0px;
+	}
+	}
+	h2{
+	font-family:"Orator Std";
+	text-transform:uppercase;
+	font-size:1.5em;
+	text-align:center;
+	}
+	h3{
+		display:block;
+		font-size:1.5em;
+		background-image:url('../images/blue.png');
+		background-position:right;
+		border-radius:10px;
+		color:#ffffff;
+		padding:15px 25px 10px 25px;
+		margin:10px 0px;
+		font-family: "Orator Std";
+		text-transform:uppercase;
+	}
+/*end of heading styles*/
+
+/*clearing float*/
+	.cf:before, .cf:after {
+		content=””;
+		display:table;
+	}
+	.cf:after{
+		clear:both;
+	}
+
+/*hr styles*/
+hr.stylish-rule {
+	margin:0.2em auto 0.5em auto;
+	border:0;
+	height:2px;
+	background:linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75),rgba(0,0,0,0));
+}
+/*button*/
+.button{
+	background:#7777BF;
+	color:white;
+	text-decoration:none;
+	padding:0 1em;
+	height:2.4em;
+	display:table;	/*to make button block element because links by default are inline elements*/
+	line-height:2.4em;
+	border: 1px solid rgb(24,122,232);
+	font-family:Helvetica,sans-serif;
+	font-weight:100;
+	font-size:1em;
+	text-transform:uppercase;
+	text-align:center;
+	white-space:nowrap;
+	cursor:pointer;
+	border-radius:0.325em;
+	box-shadow: inset 0px 1px 3px black; 	/*horizontal-offset vertical-offset radius spread color*/
+	background:linear-gradient(to bottom, rgb(30,84,122) 0%,rgb(125,185,230) 100%);
+}
+.gradient-heading{
+	background: -moz-linear-gradient(top, rgba(10,10,10,1) 0%, rgba(11,11,11,1) 1%, rgba(28,28,28,0.98) 30%, rgba(250,250,250,0.92) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(10,10,10,1)), color-stop(1%,rgba(11,11,11,1)), color-stop(30%,rgba(28,28,28,0.98)), color-stop(100%,rgba(250,250,250,0.92)));
+	background: -webkit-linear-gradient(top, rgba(10,10,10,1) 0%,rgba(11,11,11,1) 1%,rgba(28,28,28,0.98) 30%,rgba(250,250,250,0.92) 100%);
+	background: -o-linear-gradient(top, rgba(10,10,10,1) 0%,rgba(11,11,11,1) 1%,rgba(28,28,28,0.98) 30%,rgba(250,250,250,0.92) 100%);
+	background: -ms-linear-gradient(top, rgba(10,10,10,1) 0%,rgba(11,11,11,1) 1%,rgba(28,28,28,0.98) 30%,rgba(250,250,250,0.92) 100%);
+	background: linear-gradient(to bottom, rgba(10,10,10,1) 0%,rgba(11,11,11,1) 1%,rgba(28,28,28,0.98) 30%,rgba(250,250,250,0.92) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#ebfafafa',GradientType=0 );
+}

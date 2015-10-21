@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ $1.php
+
+
+#<IfModule mod_deflate.c>
+#AddOutputFilterByType DEFLATE text/text OTF/TTF text/html text/plain text/xml text/css application/x-javascript #application/javascript
+#</IfModule>
+
+<ifmodule mod_deflate.c>
+Addtype font/truetype .ttf
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript application/javascript text/text font/opentype font/truetype font/eot
+</ifmodule>
